@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IGI Logistics Supply Catalog</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f3f5f7;
+    color:#111;
+}
+
+header{
+    background:#0b0b0c;
+    color:white;
+    padding:18px 30px;
+}
+
+header h1{
+    margin:0;
+    letter-spacing:2px;
+}
+
+.sub{
+    opacity:.7;
+    font-size:14px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:30px;
+}
+
+/* catalog card */
+
+.product-card{
+    background:white;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,.12);
+    padding:25px;
+    display:grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap:30px;
+}
+
+.product-images img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:18px;
+}
+
+/* right side */
+
+.product-title{
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+.sku{
+    color:#666;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.price-box{
+    background:#111;
+    color:white;
+    padding:18px;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+.price{
+    font-size:32px;
+    font-weight:bold;
+}
+
+.unit{
+    font-size:14px;
+    opacity:.8;
+}
+
+.specs{
+    margin-top:15px;
+}
+
+.specs table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.specs td{
+    padding:10px;
+    border-bottom:1px solid #eee;
+    font-size:15px;
+}
+
+.section-title{
+    font-weight:bold;
+    margin-top:25px;
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.logistics{
+    background:#f7f9fb;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+button{
+    background:#1a73e8;
+    border:none;
+    color:white;
+    padding:14px 20px;
+    font-size:16px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+button:hover{
+    background:#0f5ed7;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#777;
+    font-size:13px;
+}
+
+@media(max-width:900px){
+    .product-card{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>IGI SUPPLY & LOGISTICS</h1>
+    <div class="sub">Procurement Distribution Catalog</div>
+</header>
+
+<div class="container">
+
+<div class="product-card">
+
+    <!-- LEFT SIDE IMAGES -->
+    <div class="product-images">
+        <img src="images/sunglasses-product.jpg" alt="Safety Sunglasses">
+        <img src="images/sunglasses-box.jpg" alt="Case Pack">
+    </div>
+
+    <!-- RIGHT SIDE INFO -->
+    <div>
+
+        <div class="product-title">Industrial Wraparound Safety Sunglasses</div>
+        <div class="sku">SKU: IGI-EYE-2441</div>
+
+        <div class="price-box">
+            <div class="price">$65.50</div>
+            <div class="unit">per case (24 units)</div>
+        </div>
+
+        <div class="section-title">Product Specifications</div>
+        <div class="specs">
+            <table>
+                <tr><td>Lens Type</td><td>Smoke Tinted Polycarbonate</td></tr>
+                <tr><td>Frame</td><td>Impact Resistant Wraparound</td></tr>
+                <tr><td>UV Protection</td><td>UV400</td></tr>
+                <tr><td>Usage</td><td>Outdoor, Construction, Gym, Tactical Training</td></tr>
+                <tr><td>Comfort</td><td>Lightweight Nose Bridge</td></tr>
+                <tr><td>Certification</td><td>General Industrial Protective</td></tr>
+            </table>
+        </div>
+
+        <div class="section-title">Logistics Information</div>
+        <div class="logistics">
+            <table>
+                <tr><td>Case Pack</td><td>24 Units</td></tr>
+                <tr><td>Unit Cost</td><td>$2.73 per pair</td></tr>
+                <tr><td>Cases per Pallet</td><td>80</td></tr>
+                <tr><td>Units per Pallet</td><td>1,920 pairs</td></tr>
+                <tr><td>Pallet Value</td><td>$5,240</td></tr>
+                <tr><td>Shipping</td><td>FOB Warehouse</td></tr>
+            </table>
+        </div>
+
+        <div class="section-title">Applications</div>
+        <ul>
+            <li>Gym training</li>
+            <li>Range shooting</li>
+            <li>Warehouse operations</li>
+            <li>Landscaping crews</li>
+            <li>Municipal workers</li>
+            <li>Security personnel</li>
+        </ul>
+
+        <button onclick="window.print()">Print Spec Sheet / Purchase Order</button>
+
+    </div>
+
+</div>
+
+</div>
+
+<footer>
+© IGI Logistics Supply Division — Distributor Procurement Sheet
+</footer>
+
+</body>
+</html>
